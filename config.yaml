@@ -1,0 +1,26 @@
+train:
+  train         : C:\Users\yamazaki\Desktop\Randomforest_prog\result\kfold\01_30_01_00\fold1\traindata.csv
+  test          : C:\Users\yamazaki\Desktop\Randomforest_prog\result\kfold\01_30_01_00\fold1\testdata.csv
+  data_number : 10
+  data_detail  :
+    - left_striketime
+    - left_standtime
+    - left_toetime
+    - left_swingtime
+    - right_striketime
+    - right_standtime
+    - right_toetime
+    - right_swingtime
+    - bothfoot_time(left)
+    - bothfoot_time(right)
+  target :
+    - walk
+    - run
+
+test:
+  testpath  : C:\Users\yamazaki\Desktop\Randomforest_prog\result\kfold\02_01_21_18\fold2\testdata.csv
+  modelpath : C:\Users\yamazaki\Desktop\Randomforest_prog\result\kfold\02_01_21_18\fold2\model\model.pkl
+
+result:
+  graphviz_path : C:\graphviz-2.38\bin\dot.exe
+  trees         : 10

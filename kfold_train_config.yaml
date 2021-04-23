@@ -1,0 +1,24 @@
+train:
+  csv         : tredmill.csv
+  K_fold      : 10
+  data_number : 10
+  data_detail  :
+    - right_striketime
+    - right_standtime
+    - right_toetime
+    - right_swingtime
+    - left_striketime
+    - left_standtime
+    - left_toetime
+    - left_swingtime
+    - bothfoot_time(left)
+    - bothfoot_time(right)
+  target :
+    - oldwalk
+    - slow
+    - run
+    - normal
+
+result:
+  graphviz_path : C:\graphviz-2.38\bin\dot.exe
+  trees         : 0
